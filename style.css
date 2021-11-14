@@ -1,0 +1,110 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background : linear-gradient(to left, rgb(243, 11, 243), pink)
+}
+
+.main_div{
+   display: grid; 
+   justify-content: center; 
+   align-content: center;
+   min-height: 100vh;
+   grid-template-columns: repeat(4, 100px);
+   grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+   /* background-color: darkkhaki; */
+
+}
+
+.main_div > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border : 1px solid white;
+  background-color: rgba(255, 255, 255, .25);
+  outline: none;
+}
+
+
+.main_div > button:hover{
+  background-color : rgba(255,255,255, .70);
+}
+
+.clearClass{
+  grid-column: span 2;
+}
+
+.output{
+  grid-column: 1 / -1;
+  background-color : rgba(0, 0, 0, .50);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+} 
+
+.output .prev_div{
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.current_div{
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255);
+}
+/* .main_div{
+  height: 500px;
+  width: 480px;
+  border: solid purple;
+  border-radius: 20px;
+  margin-left: 300px;
+  margin-top: 60px;
+}
+
+#text_id{
+   margin: 0 auto;
+   height: 20%;
+   display: grid;
+   grid-template-columns: 5fr 1fr;
+}
+
+#operation_id{
+   height: 80%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-rows: repeat(5, 1fr);
+   grid-template-columns: repeat(4, 1fr);
+   column-gap: 5px;
+   row-gap: 5px;
+}
+
+.button_class{
+  border-radius: 20px;
+  font-size: 30px;
+  background-color: transparent;
+  border-color: white;
+}
+
+.button_class:hover{
+  transform: scale(1.03);
+  background-color:rgba(238, 217, 247, 0.712);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.button_class:focus{
+  background-color: rgba(212, 152, 247, 0.712);
+}
+
+#clear_button{
+  background-color: pink;
+
+}
+
+#equals{
+  background-color: rgb(210, 119, 238);
+} */
